@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements Demo</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/styles/pseudo-elements.css">
+
+    <!-- Internal CSS example (optional) -->
+    <style>
+        /* Example inline internal styles for demonstration */
+        h1::before {
+            content: "🌟 ";
+        }
+        h1::after {
+            content: " 🌟";
+        }
+    </style>
+</head>
+<body>
+
+<h1>Pseudo-elements Demo</h1>
+
+<!-- ::before and ::after -->
+<h2>1. ::before and ::after</h2>
+<p class="quote">This paragraph has generated content before and after.</p>
+
+<!-- ::first-letter and ::first-line -->
+<h2>2. ::first-letter and ::first-line</h2>
+<p class="story">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Vestibulum imperdiet nulla id dui placerat, ut venenatis nisi fermentum.
+</p>
+
+<!-- ::selection -->
+<h2>3. ::selection</h2>
+<p>Select this text to see the ::selection effect in action.</p>
+
+<!-- Combining pseudo-classes and pseudo-elements -->
+<h2>4. Combine pseudo-elements with pseudo-classes</h2>
+<p class="hover-text">Hover over this paragraph to see a pseudo-element appear.</p>
+
+</body>
+</html>

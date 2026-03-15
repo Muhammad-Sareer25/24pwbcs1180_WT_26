@@ -1,0 +1,35 @@
+/* 1. ::before and ::after */
+.quote::before {
+    content: "« ";
+    color: blue;
+    font-weight: bold;
+}
+.quote::after {
+    content: " »";
+    color: blue;
+    font-weight: bold;
+}
+
+/* 2. ::first-letter and ::first-line */
+.story::first-letter {
+    font-size: 2em;
+    color: red;
+    font-weight: bold;
+}
+.story::first-line {
+    font-style: italic;
+    color: darkgreen;
+}
+
+/* 3. ::selection */
+p::selection {
+    background-color: yellow;
+    color: black;
+}
+
+/* 4. Combining pseudo-class and pseudo-element */
+.hover-text:hover::after {
+    content: " 👆 You hovered me!";
+    color: orange;
+    font-weight: bold;
+}

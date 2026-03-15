@@ -1,0 +1,91 @@
+body{
+font-family: Arial, sans-serif;
+margin:20px;
+text-align:center;
+}
+
+h1{
+margin-bottom:30px;
+}
+
+/* Base Button Style */
+
+.btn{
+padding:10px 20px;
+margin:10px;
+border:none;
+cursor:pointer;
+font-size:16px;
+color:white;
+transition: all 0.3s ease;
+}
+
+/* Sizes */
+
+.small{
+font-size:12px;
+padding:6px 12px;
+}
+
+.medium{
+font-size:16px;
+}
+
+.large{
+font-size:22px;
+padding:14px 28px;
+}
+
+/* Colors */
+
+.red{
+background-color:red;
+}
+
+.green{
+background-color:green;
+}
+
+.blue{
+background-color:blue;
+}
+
+/* Shapes */
+
+.rounded{
+border-radius:20px;
+background-color:purple;
+}
+
+.circle{
+border-radius:50%;
+width:80px;
+height:80px;
+background-color:orange;
+}
+
+/* Gradient */
+
+.gradient{
+background: linear-gradient(to right, purple, pink);
+}
+
+/* Shadow */
+
+.shadow{
+background-color:black;
+box-shadow:4px 4px 10px gray;
+}
+
+/* Hover Effects */
+
+.btn:hover{
+transform:scale(1.1);
+opacity:0.9;
+}
+
+/* Focus State */
+
+.btn:focus{
+outline:3px solid yellow;
+}

@@ -1,0 +1,94 @@
+body{
+font-family: Arial, sans-serif;
+margin:20px;
+}
+
+/* Horizontal Navigation */
+
+.horizontal-menu ul{
+list-style:none;
+margin:0;
+padding:0;
+display:flex;
+background-color:#333;
+}
+
+.horizontal-menu li{
+position:relative;
+}
+
+.horizontal-menu a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+/* Hover state */
+
+.horizontal-menu a:hover{
+background-color:#555;
+}
+
+/* Active state */
+
+.horizontal-menu .active{
+background-color:#04AA6D;
+}
+
+/* Dropdown Menu */
+
+.dropdown-menu{
+display:none;
+position:absolute;
+background-color:#444;
+top:100%;
+left:0;
+min-width:150px;
+}
+
+.dropdown-menu li{
+display:block;
+}
+
+.dropdown-menu a{
+padding:10px;
+}
+
+/* Show dropdown on hover */
+
+.dropdown:hover .dropdown-menu{
+display:block;
+}
+
+/* Vertical Navigation */
+
+.vertical-menu{
+width:200px;
+margin-top:30px;
+}
+
+.vertical-menu a{
+display:block;
+padding:12px;
+background-color:#eee;
+margin-bottom:5px;
+text-decoration:none;
+color:black;
+transition:0.3s;
+}
+
+.vertical-menu a:hover{
+background-color:#ccc;
+}
+
+/* Responsive Design */
+
+@media (max-width:600px){
+
+.horizontal-menu ul{
+flex-direction:column;
+}
+
+}

@@ -1,0 +1,88 @@
+body{
+font-family: Arial, sans-serif;
+background-color:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+/* Form Container */
+
+.form-container{
+background:white;
+padding:30px;
+border-radius:10px;
+width:300px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+display:flex;
+flex-direction:column;
+}
+
+/* Labels */
+
+label{
+margin-top:10px;
+font-weight:bold;
+}
+
+/* Input Fields */
+
+input, select{
+padding:10px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:14px;
+}
+
+/* Focus State */
+
+input:focus, select:focus{
+border-color:blue;
+outline:none;
+box-shadow:0 0 5px lightblue;
+}
+
+/* Styled Button */
+
+button{
+margin-top:15px;
+padding:10px;
+background:linear-gradient(to right, blue, purple);
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+opacity:0.8;
+transform:scale(1.05);
+}
+
+/* Dropdown Styling */
+
+select{
+background-color:#fafafa;
+}
+
+/* Error State */
+
+.error{
+border:2px solid red;
+background-color:#ffe5e5;
+}
+
+.error-label{
+color:red;
+}
+
+/* Success Message */
+
+.success{
+color:green;
+margin-top:15px;
+font-weight:bold;
+}

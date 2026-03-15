@@ -1,0 +1,87 @@
+/* 1️⃣ Basic selectors (5) */
+p {
+    color: blue; /* element selector */
+}
+
+#unique {
+    font-weight: bold; /* ID selector */
+}
+
+.intro {
+    font-style: italic; /* class selector */
+}
+
+div.box {
+    border: 2px solid black; /* element + class */
+    padding: 10px;
+}
+
+span {
+    color: darkred; /* element selector */
+}
+
+/* 2️⃣ Attribute selectors (3) */
+a[href^="https"] {
+    color: green; /* links starting with https */
+}
+
+a[href$=".com"] {
+    font-weight: bold; /* links ending with .com */
+}
+
+input[placeholder] {
+    border: 2px solid orange; /* inputs with placeholder attribute */
+}
+
+/* 3️⃣ Combinators (4) */
+/* Descendant combinator */
+.parent p {
+    color: purple;
+}
+
+/* Child combinator */
+.parent > span {
+    background-color: yellow;
+}
+
+/* Adjacent sibling */
+p + p {
+    color: teal;
+}
+
+/* General sibling */
+p ~ p.special {
+    color: red;
+}
+
+/* 4️⃣ Pseudo-classes (5) */
+input:focus {
+    border-color: blue;
+}
+
+input:checked {
+    accent-color: green;
+}
+
+input:disabled {
+    background-color: lightgray;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+/* 5️⃣ Pseudo-elements (2) */
+p.pseudo::first-letter {
+    font-size: 2em;
+    color: orange;
+}
+
+p.pseudo::after {
+    content: " ★";
+    color: red;
+}
