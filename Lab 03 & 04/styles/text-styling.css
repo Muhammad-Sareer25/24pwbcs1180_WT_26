@@ -1,0 +1,56 @@
+/* 1. Text Color and Opacity */
+.color-red {
+    color: red;
+}
+
+.color-blue-opacity {
+    color: blue;
+    opacity: 0.5;
+}
+
+/* 2. Text Alignment and Decoration */
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+/* 3. Text Transformation */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* 4. Text Shadow Effects */
+.shadow-small {
+    text-shadow: 2px 2px 3px gray;
+}
+
+.shadow-large {
+    text-shadow: 4px 4px 5px black;
+}

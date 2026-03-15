@@ -1,0 +1,93 @@
+body{
+font-family: Arial, sans-serif;
+background-color: #f5f5f5;
+margin:20px;
+}
+
+h1{
+text-align:center;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.card{
+text-align:center;
+}
+
+/* Image Size */
+
+img{
+width:250px;
+height:300px;
+object-fit:cover;
+}
+
+/* Rounded Corners */
+
+.rounded{
+border-radius:20px;
+}
+
+/* Circular Image */
+
+.circle{
+border-radius:50%;
+}
+
+/* Borders and Shadows */
+
+.shadow{
+border:5px solid black;
+box-shadow:5px 5px 10px gray;
+}
+
+/* Hover Effects and Transitions */
+
+.hover-effect{
+transition:transform 0.4s;
+}
+
+.hover-effect:hover{
+transform:scale(1.1);
+}
+
+/* CSS Filters */
+
+.filter{
+filter:grayscale(100%);
+}
+
+.filter:hover{
+filter:none;
+}
+
+/* Overlay with Text */
+
+.overlay-container{
+position:relative;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+opacity:0;
+transition:0.4s;
+font-size:20px;
+}
+
+.overlay-container:hover .overlay{
+opacity:1;
+}

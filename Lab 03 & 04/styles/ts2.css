@@ -1,0 +1,87 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    margin: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+/* Google Fonts */
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.playfair{
+    font-family: 'Playfair Display', serif;
+}
+
+.lobster{
+    font-family: 'Lobster', cursive;
+}
+
+/* Font Sizes */
+.size-px{
+    font-size: 24px;
+}
+
+.size-em{
+    font-size: 1.5em;
+}
+
+.size-rem{
+    font-size: 2rem;
+}
+
+.size-percent{
+    font-size: 150%;
+}
+
+/* Text Alignment */
+.left{
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+/* Text Decoration */
+.underline{
+    text-decoration: underline;
+}
+
+.overline{
+    text-decoration: overline;
+}
+
+.line{
+    text-decoration: line-through;
+}
+
+/* Text Transformation */
+.upper{
+    text-transform: uppercase;
+}
+
+.lower{
+    text-transform: lowercase;
+}
+
+.cap{
+    text-transform: capitalize;
+}
+
+/* Text Shadow */
+.shadow1{
+    text-shadow: 2px 2px 3px gray;
+}
+
+.shadow2{
+    text-shadow: 4px 4px 5px black;
+}

@@ -1,0 +1,36 @@
+/* 1. Line Height */
+.line-default {
+    line-height: 1.2; /* default */
+}
+
+.line-tall {
+    line-height: 2; /* taller spacing for readability */
+}
+
+/* 2. Letter and Word Spacing */
+.letter-spacing {
+    letter-spacing: 4px;
+}
+
+.word-spacing {
+    word-spacing: 10px;
+}
+
+/* 3. Text Indent and White-space */
+.text-indent {
+    text-indent: 50px;
+}
+
+.white-space {
+    white-space: pre-wrap;
+}
+
+/* 4. Text Overflow Handling */
+.overflow-box {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* shows ... when text is too long */
+    border: 1px solid black;
+    padding: 5px;
+}
