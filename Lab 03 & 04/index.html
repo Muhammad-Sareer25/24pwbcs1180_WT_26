@@ -6,69 +6,24 @@
     <title>Lab 03 & 04</title>
 
 
-  <!-- External CSS -->
-    <link rel="stylesheet" href="styles/main.css">    <!--href="main.css"if index and css file are in same folder-->
-    <link rel="stylesheet" href="styles/combinators.css">
-    <link rel="stylesheet" href="styles/attributeselector.css">
-<!--internal css-->
-    <style>
-        h2{
-            color:fuchsia;
-            text-align:center;
-        }
-
-        p{
-            font-size: 18px;
-            color:brown
-
-        }
-
-        .internal-box{
-            background-color: rgb(0, 255, 251);
-            padding: 10px;
-            border: 2px solid orange
-        }
+  
+    
+    
+<style>
  
 
-        /*ex 02*/
-/*  Universal Selector */
-*{
-    font-family: Arial, sans-serif;
-}
 
-/*  Element Selectors */
-h1{
-    color: darkblue;
+
+
+h1{color: white;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
     text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    font-family: 'Arial Black', Gadget, sans-serif;
+    letter-spacing: 2px;
 }
-
-p{
-    color: black;
-    font-size: 16px;
-}
-
-div{
-    border: 2px solid gray;
-    padding: 10px;
-    margin: 10px;
-}
-
-/*Class Selector */
-.highlight{
-    background-color: yellow;
-    color: red;
-    font-weight: bold;
-}
-
-/*  ID Selector */
-#special{
-    color: white;
-    background-color: green;
-    padding: 10px;
-}
-
-
-
 
 
 
@@ -80,96 +35,17 @@ div{
 
 </head>
 <body>
-ex 01    
-    <h1>CSS Implementation</h1>
-    <!-- Internal CSS Example -->
-    <div class="internal-box">
-        <h2>This heading uses Internal CSS</h2>
-        <p>This paragraph is styled using CSS written inside the &lt;style&gt; tag.</p>
-    </div>
-<p>
-   This is internal css --- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, quis. Beatae illum laudantium nemo rerum recusandae tempore amet quisquam porro facere modi fuga eius repudiandae culpa, molestias perspiciatis! Corrupti, quasi?
-</p>
 
-    <h2 style="color:blue" >CSS Precedence Example "Inline CSS overrides internal and external CSS"</h2>
-
-<!-- Inline CSS -->
-    <h3 style="color: red;">This heading uses Inline CSS</h3>
+<h1>Web Technologies Lab 03_04</h1>
+<h4>By clicking on each link you will viste each exercise</h4>
+<a href="exercises/ex01.html">Exercise 01</a><br>
+<a href="exercises/ex02.html">Exercise 02</a><br>
+<a href="exercises/ex03.html">Exercise 03</a><br>
+<a href="exercises/ex04.html">Exercise 04</a><br>
 
 
-ex 02
-    <h1>CSS Basic Selectors</h1>
 
-<p>This paragraph is styled using an <b>element selector</b>.</p>
 
-<p class="highlight">
-This paragraph uses a <b>class selector</b> called "highlight".
-</p>
-
-<div>
-This div element is styled using the <b>div element selector</b>.
-</div>
-
-<p id="special">
-This paragraph uses an <b>ID selector</b>.
-</p>
-
-<p>
-All elements also inherit font style from the <b>universal selector</b>.
-</p>
-
-ex 03
-
-<h1>CSS Attribute Selectors</h1>
-
-<h2>1. Attribute Selector</h2>
-<a href="https://www.facebook.com" target="_blank">Facbook Link (target attribute)</a>
-
-<h2>2. Attribute Value Selector</h2>
-<input type="text" placeholder="Text input">
-<input type="password" placeholder="Password input">
-
-<h2>3. Partial Value Matching</h2>
-<a href="https://www.google.com">Google Link</a>
-
-<h2>4. Begins With Selector</h2>
-<a href="https://www.wikipedia.org">Wikipedia</a>
-
-<h2>5. Ends With Selector</h2>
-<a href="https://www.microsoft.com">Microsoft</a>
-<a href="https://www.example.org">Example Org</a>
-
-<br>ex 04
-
-<h1>CSS Combinators Example</h1>
-
-<!-- Descendant combinator -->
-<div>
-    <h2>Descendant Example</h2>
-    <p>This paragraph is inside div.</p>
-    <span>
-        <p>This paragraph is also inside div.</p>
-    </span>
-</div>
-
-<!-- Child combinator -->
-<section>
-    <h2>Child Example</h2>
-    <p>This is a direct child of section.</p>
-    <div>
-        <p>This paragraph is NOT a direct child.</p>
-    </div>
-</section>
-
-<!-- Adjacent sibling -->
-<h2>Adjacent Sibling Example</h2>
-<p>This paragraph is immediately after h2.</p>
-<p>This paragraph will not be affected.</p>
-
-<!-- General sibling -->
-<h3>General Sibling Example</h3>
-<p>This paragraph is a sibling after h3.</p>
-<p>This paragraph is also a sibling after h3.</p>
 
 
 </body>

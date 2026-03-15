@@ -1,0 +1,21 @@
+/* 1 Descendant Combinator */
+div p{
+    color: blue;
+}
+
+/* 2 Child Combinator */
+section > p{
+    color: red;
+    font-weight: bold;
+}
+
+/* 3 Adjacent Sibling Combinator */
+h2 + p{
+    background-color: yellow;
+}
+
+/* 4 General Sibling Combinator */
+h3 ~ p{
+    border: 2px solid green;
+    padding: 5px;
+}
