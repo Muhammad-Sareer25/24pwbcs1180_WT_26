@@ -28,6 +28,42 @@
             border: 2px solid orange
         }
 
+/*  Universal Selector */
+*{
+    font-family: Arial, sans-serif;
+}
+
+/*  Element Selectors */
+h1{
+    color: darkblue;
+    text-align: center;
+}
+
+p{
+    color: black;
+    font-size: 16px;
+}
+
+div{
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*Class Selector */
+.highlight{
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+
+/*  ID Selector */
+#special{
+    color: white;
+    background-color: green;
+    padding: 10px;
+}
+
     </style>
 </head>
 <body>
@@ -44,6 +80,28 @@
 
 <!-- Inline CSS -->
     <h3 style="color: red;">This heading uses Inline CSS</h3>
+
+
+
+    <h1>CSS Basic Selectors</h1>
+
+<p>This paragraph is styled using an <b>element selector</b>.</p>
+
+<p class="highlight">
+This paragraph uses a <b>class selector</b> called "highlight".
+</p>
+
+<div>
+This div element is styled using the <b>div element selector</b>.
+</div>
+
+<p id="special">
+This paragraph uses an <b>ID selector</b>.
+</p>
+
+<p>
+All elements also inherit font style from the <b>universal selector</b>.
+</p>
 
 
 </body>
