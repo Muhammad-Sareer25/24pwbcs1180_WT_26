@@ -1,0 +1,21 @@
+body{
+    font-family:cursive;
+    background-color: beige;
+    margin: 20px;
+}
+
+h1{
+    text-align:center;
+    color:black
+}
+
+.external-box{
+    background-color: lightblue;
+    padding: 15px;
+    border: 20px solid navy;
+    margin-top: 20px;
+}
+
+p{
+    line-height: 1.6;
+}
