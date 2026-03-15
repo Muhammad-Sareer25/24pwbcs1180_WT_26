@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes Example</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../styles/pseudo.css">
+</head>
+<body>
+
+<h1>Pseudo-classes Demo</h1>
+
+<!-- Link states -->
+<h2>Link States</h2>
+<a href="https://www.google.com">Google (:link)</a><br>
+<a href="https://www.example.com" class="visited-link">Example (:visited)</a><br>
+<a href="#">Hover me (:hover)</a><br>
+<a href="#">Click me (:active)</a><br>
+
+<!-- Form states -->
+<h2>Form States</h2>
+<form>
+    <input type="text" placeholder="Focus me (:focus)"><br>
+    <input type="checkbox" id="agree"> <label for="agree">Agree (:checked)</label><br>
+    <input type="text" placeholder="Disabled input" disabled> (:disabled)<br>
+</form>
+
+<!-- Structural pseudo-classes -->
+<h2>Structural Pseudo-classes</h2>
+<ul>
+    <li>First item (:first-child)</li>
+    <li>Second item</li>
+    <li>Third item (:nth-child(3))</li>
+    <li>Last item (:last-child)</li>
+</ul>
+
+<!-- Content-based pseudo-classes -->
+<h2>Content-based Pseudo-classes</h2>
+<p class="empty"></p> <!-- :empty -->
+<p>Not empty paragraph</p>
+<p class="not-example">This is not empty</p>
+
+</body>
+</html>
