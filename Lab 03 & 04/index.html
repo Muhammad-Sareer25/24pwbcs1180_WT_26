@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 03 & 04</title>
-<h1>CSS Implementation</h1>
+
 
   <!-- External CSS -->
     <link rel="stylesheet" href="styles/main.css">    <!--href="main.css"if index and css file are in same folder-->
@@ -27,7 +27,9 @@
             padding: 10px;
             border: 2px solid orange
         }
+ 
 
+        /*ex 02*/
 /*  Universal Selector */
 *{
     font-family: Arial, sans-serif;
@@ -64,9 +66,87 @@ div{
     padding: 10px;
 }
 
+
+
+/*EX 03*/
+
+
+
+/*  Select elements with attribute value */
+input[type="text"]{
+    border: 2px solid blue;
+}
+
+/* Partial value matching */
+a[href*="google"]{
+    background-color: yellow;
+}
+
+/*  Begins with selector */
+a[href^="https"]{
+    text-decoration: none;
+}
+
+/*  Ends with selector */
+a[href$=".com"]{
+    color: green;
+}
+/*  Select elements with a specific attribute */                /*
+Facebook link is not red is due to CSS precedence and selector conflicts.
+
+You have two selectors affecting the same link:
+
+1️⃣ This rule
+a[target]{
+    color: red;
+}
+2️⃣ This rule
+a[href$=".com"]{
+    color: green;
+}
+
+Your Facebook link is:
+
+<a href="https://www.facebook.com" target="_blank">
+
+It matches both selectors:
+
+a[target] ✅
+
+a[href$=".com"] ✅
+
+Since a[href$=".com"] appears later in your CSS, it overrides the red color, making the link green.
+
+✅ Fix Option 1 (Best for your lab)
+
+Move the a[target] rule below the .com rule.
+
+/* Ends with selector */
+/*a[href$=".com"]{
+    color: green;
+}*/
+
+/* Attribute selector 
+a[target]{
+    color: red;
+}
+
+Now red will override green.
+
+✅ Fix Option 2 (More specific selector)
+a[target="_blank"]{
+    color:red;
+}
+
+*/
+a[target]{
+    color: red;
+    font-weight: bold;
+}
     </style>
 </head>
 <body>
+    <h1>CSS Implementation</h1>
     <!-- Internal CSS Example -->
     <div class="internal-box">
         <h2>This heading uses Internal CSS</h2>
@@ -82,7 +162,7 @@ div{
     <h3 style="color: red;">This heading uses Inline CSS</h3>
 
 
-
+<!---ex 02-->
     <h1>CSS Basic Selectors</h1>
 
 <p>This paragraph is styled using an <b>element selector</b>.</p>
@@ -103,6 +183,25 @@ This paragraph uses an <b>ID selector</b>.
 All elements also inherit font style from the <b>universal selector</b>.
 </p>
 
+<!--ex 03-->
 
+<h1>CSS Attribute Selectors</h1>
+
+<h2>1. Attribute Selector</h2>
+<a href="https://www.facebook.com" target="_blank">Facbook Link (target attribute)</a>
+
+<h2>2. Attribute Value Selector</h2>
+<input type="text" placeholder="Text input">
+<input type="password" placeholder="Password input">
+
+<h2>3. Partial Value Matching</h2>
+<a href="https://www.google.com">Google Link</a>
+
+<h2>4. Begins With Selector</h2>
+<a href="https://www.wikipedia.org">Wikipedia</a>
+
+<h2>5. Ends With Selector</h2>
+<a href="https://www.microsoft.com">Microsoft</a>
+<a href="https://www.example.org">Example Org</a>
 </body>
 </html>
