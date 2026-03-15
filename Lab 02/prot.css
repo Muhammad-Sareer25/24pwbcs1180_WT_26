@@ -1,0 +1,177 @@
+/* ============================= */
+/* Personal Portfolio Styling */
+/* ============================= */
+
+/* 1. Global Styles: Color Scheme & Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333; /* text color */
+    background-color: #f5f5f5; /* light background */
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #222; /* dark headings */
+    margin-top: 0;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* ============================= */
+/* 2. Consistent Spacing & Layout */
+header, nav, section, footer {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 1000px;
+}
+
+/* Container for main content */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* ============================= */
+/* 3. Image Styling & Effects */
+img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on images */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* ============================= */
+/* 4. Navigation Menu Styling */
+nav {
+    background-color: #004080; /* dark blue */
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00; /* hover color */
+}
+
+/* ============================= */
+/* 5. Buttons */
+button {
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* ============================= */
+/* 6. Table Styling (for schedule) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #004080;
+    color: #fff;
+}
+
+.lunch {
+    background-color: #e6f2ff;
+    font-weight: bold;
+}
+
+/* ============================= */
+/* 7. Form Styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #004080;
+    outline: none;
+}
+
+/* ============================= */
+/* 8. Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #004080;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+/* ============================= */
+/* 9. Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
