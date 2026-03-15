@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 03 & 04</title>
+<h1>CSS Implementation</h1>
 
-    
+  <!-- External CSS -->
+    <link rel="stylesheet" href="styles/main.css">    <!--href="main.css"if index and css file are in same folder-->
+
+<!--internal css-->
+    <style>
+        h2{
+            color:fuchsia;
+            text-align:center;
+        }
+
+        p{
+            font-size: 18px;
+            color:brown
+
+        }
+
+        .internal-box{
+            background-color: rgb(0, 255, 251);
+            padding: 10px;
+            border: 2px solid orange
+        }
+
+    </style>
 </head>
 <body>
-    
+    <!-- Internal CSS Example -->
+    <div class="internal-box">
+        <h2>This heading uses Internal CSS</h2>
+        <p>This paragraph is styled using CSS written inside the &lt;style&gt; tag.</p>
+    </div>
+<p>
+   This is internal css --- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, quis. Beatae illum laudantium nemo rerum recusandae tempore amet quisquam porro facere modi fuga eius repudiandae culpa, molestias perspiciatis! Corrupti, quasi?
+</p>
+
+    <h2 style="color:blue" >CSS Precedence Example "Inline CSS overrides internal and external CSS"</h2>
+
+<!-- Inline CSS -->
+    <h3 style="color: red;">This heading uses Inline CSS</h3>
+
+
 </body>
 </html>
