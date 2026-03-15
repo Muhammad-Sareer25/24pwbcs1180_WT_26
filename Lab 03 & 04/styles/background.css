@@ -1,0 +1,57 @@
+/* 1. Background Colors */
+.bg-hex {
+    background-color: #ffcc00; /* Hex */
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.bg-rgb {
+    background-color: rgb(100, 150, 200); /* RGB */
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.bg-hsl {
+    background-color: hsl(120, 50%, 70%); /* HSL */
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* 2. Background Images */
+.bg-image-repeat {
+    background-image: url('/images/pattern.png'); /* local repeating image */
+    background-repeat: repeat;
+    padding: 100px;
+    margin-bottom: 10px;
+}
+
+.bg-image-no-repeat {
+    background-image: url('/images/pattern.png'); /* local image */
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 100px;
+    margin-bottom: 10px;
+}
+
+/* 3. Background Position and Size */
+.bg-position-size {
+    background-image: url('/images/pattern.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 150px 150px;
+    padding: 150px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+/* 4. Background Attachment */
+.bg-attachment {
+    background-image: url('/images/pattern.png');
+    background-attachment: fixed; /* stays in place while scrolling */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    color: white;
+}
