@@ -8,7 +8,8 @@
 
   <!-- External CSS -->
     <link rel="stylesheet" href="styles/main.css">    <!--href="main.css"if index and css file are in same folder-->
-
+    <link rel="stylesheet" href="styles/combinators.css">
+    <link rel="stylesheet" href="styles/attributeselector.css">
 <!--internal css-->
     <style>
         h2{
@@ -68,84 +69,18 @@ div{
 
 
 
-/*EX 03*/
 
 
 
-/*  Select elements with attribute value */
-input[type="text"]{
-    border: 2px solid blue;
-}
 
-/* Partial value matching */
-a[href*="google"]{
-    background-color: yellow;
-}
 
-/*  Begins with selector */
-a[href^="https"]{
-    text-decoration: none;
-}
-
-/*  Ends with selector */
-a[href$=".com"]{
-    color: green;
-}
-/*  Select elements with a specific attribute */                /*
-Facebook link is not red is due to CSS precedence and selector conflicts.
-
-You have two selectors affecting the same link:
-
-1️⃣ This rule
-a[target]{
-    color: red;
-}
-2️⃣ This rule
-a[href$=".com"]{
-    color: green;
-}
-
-Your Facebook link is:
-
-<a href="https://www.facebook.com" target="_blank">
-
-It matches both selectors:
-
-a[target] ✅
-
-a[href$=".com"] ✅
-
-Since a[href$=".com"] appears later in your CSS, it overrides the red color, making the link green.
-
-✅ Fix Option 1 (Best for your lab)
-
-Move the a[target] rule below the .com rule.
-
-/* Ends with selector */
-/*a[href$=".com"]{
-    color: green;
-}*/
-
-/* Attribute selector 
-a[target]{
-    color: red;
-}
-
-Now red will override green.
-
-✅ Fix Option 2 (More specific selector)
-a[target="_blank"]{
-    color:red;
-}
-
-*/
-a[target]{
-    color: red;
-    font-weight: bold;
-}
     </style>
+
+    
+
 </head>
 <body>
+ex 01    
     <h1>CSS Implementation</h1>
     <!-- Internal CSS Example -->
     <div class="internal-box">
@@ -162,7 +97,7 @@ a[target]{
     <h3 style="color: red;">This heading uses Inline CSS</h3>
 
 
-<!---ex 02-->
+ex 02
     <h1>CSS Basic Selectors</h1>
 
 <p>This paragraph is styled using an <b>element selector</b>.</p>
@@ -183,7 +118,7 @@ This paragraph uses an <b>ID selector</b>.
 All elements also inherit font style from the <b>universal selector</b>.
 </p>
 
-<!--ex 03-->
+ex 03
 
 <h1>CSS Attribute Selectors</h1>
 
@@ -203,5 +138,39 @@ All elements also inherit font style from the <b>universal selector</b>.
 <h2>5. Ends With Selector</h2>
 <a href="https://www.microsoft.com">Microsoft</a>
 <a href="https://www.example.org">Example Org</a>
+
+<br>ex 04
+
+<h1>CSS Combinators Example</h1>
+
+<!-- Descendant combinator -->
+<div>
+    <h2>Descendant Example</h2>
+    <p>This paragraph is inside div.</p>
+    <span>
+        <p>This paragraph is also inside div.</p>
+    </span>
+</div>
+
+<!-- Child combinator -->
+<section>
+    <h2>Child Example</h2>
+    <p>This is a direct child of section.</p>
+    <div>
+        <p>This paragraph is NOT a direct child.</p>
+    </div>
+</section>
+
+<!-- Adjacent sibling -->
+<h2>Adjacent Sibling Example</h2>
+<p>This paragraph is immediately after h2.</p>
+<p>This paragraph will not be affected.</p>
+
+<!-- General sibling -->
+<h3>General Sibling Example</h3>
+<p>This paragraph is a sibling after h3.</p>
+<p>This paragraph is also a sibling after h3.</p>
+
+
 </body>
 </html>
