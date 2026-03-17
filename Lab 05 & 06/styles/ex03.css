@@ -1,0 +1,31 @@
+/* 1. Float image with text */
+.image-text img {
+    float: left;
+    margin-right: 15px;
+}
+
+/* Common column style */
+.col {
+    float: left;
+    padding: 20px;
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* 2. Two-column layout */
+.col-2 {
+    width: 50%;
+}
+
+/* 3. Three-column layout */
+.col-3 {
+    width: 33.33%;
+}
+
+/* 4. Clearfix */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

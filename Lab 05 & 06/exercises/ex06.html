@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Positioning</title>
+    <link rel="stylesheet" href="/styles/ex06.css">
+</head>
+<body>
+
+    <!-- 1. Sticky Navbar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <h2>1. Overlapping Elements (z-index)</h2>
+    <div class="overlap-container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+    </div>
+
+    <h2>2. Modal Dialog</h2>
+    <button onclick="openModal()">Open Modal</button>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Modal Title</h3>
+            <p>This is a modal dialog box.</p>
+        </div>
+    </div>
+
+    <h2>3. Tooltip</h2>
+    <div class="tooltip">
+        Hover over me
+        <span class="tooltip-text">Tooltip text!</span>
+    </div>
+
+    <h2>4. Dropdown Menu</h2>
+    <div class="dropdown">
+        <button>Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <p>Scroll down to see sticky navbar...</p>
+        <p>More content...</p>
+        <p>More content...</p>
+        <p>More content...</p>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById("modal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

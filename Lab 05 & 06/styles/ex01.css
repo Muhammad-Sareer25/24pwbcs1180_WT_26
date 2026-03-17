@@ -1,0 +1,33 @@
+/* 1. Block elements */
+.block-div {
+    display: block;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* 2. Inline elements */
+.inline-span {
+    display: inline;
+    background-color: lightgreen;
+}
+
+/* 3. Inline-block elements */
+.inline-block-box {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: lightcoral;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* 4. Hidden elements */
+.hidden-display {
+    display: none;
+}
+
+.hidden-visibility {
+    visibility: hidden;
+}
