@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* 1. Block vs Inline vs Inline-block */
+
+.block {
+    display: block;
+    background-color: lightblue;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.inline {
+    display: inline;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+/* 2. Table Display */
+
+.table {
+    display: table;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+/* 3. Responsive Display */
+
+.responsive-box {
+    display: block;
+    background-color: orange;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* Change display on smaller screens */
+@media (max-width: 600px) {
+    .responsive-box {
+        display: none;
+    }
+}
+
+
+/* 4. Hidden Elements */
+
+.visible-box {
+    background-color: lightgreen;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.hidden-box {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Hide on small screens */
+@media (max-width: 600px) {
+    .hidden-box {
+        display: none;
+    }
+}
+
+/* Visibility example */
+@media (min-width: 800px) {
+    .hidden-box {
+        visibility: hidden;
+    }
+}

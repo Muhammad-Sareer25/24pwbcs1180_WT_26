@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Demo</title>
+    <link rel="stylesheet" href="/styles/media.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Media Query Demonstration</h1>
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <p class="breakpoint">Current Screen: <span id="screen-size"></span></p>
+</header>
+
+<main class="content">
+    <section class="box">Box 1</section>
+    <section class="box">Box 2</section>
+    <section class="box">Box 3</section>
+    <section class="box">Box 4</section>
+</main>
+
+</body>
+<script>
+function updateScreenSize() {
+    const width = window.innerWidth;
+    const span = document.getElementById("screen-size");
+    span.textContent = width + "px";
+}
+window.addEventListener("resize", updateScreenSize);
+window.addEventListener("load", updateScreenSize);
+</script>
+</html>

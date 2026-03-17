@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header & Footer */
+header, footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Main Content */
+.main {
+    float: left;
+    width: 70%;
+    padding: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+    float: right;
+    width: 25%;
+    background: lightgray;
+    padding: 10px;
+}
+
+/* Wrapped Image */
+.float-img {
+    float: left;
+    margin: 10px;
+}
+
+/* Multi-column text */
+.columns p {
+    float: left;
+    width: 30%;
+    margin: 1%;
+    background: lightblue;
+    padding: 10px;
+}
+
+/* -------- Responsive Design -------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .main, .sidebar {
+        width: 100%;
+        float: none;
+    }
+
+    .columns p {
+        width: 45%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .columns p {
+        width: 100%;
+        float: none;
+    }
+
+    .float-img {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}

@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: gray;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Layout */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background: lightgray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* -------- Responsive -------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    /* Show hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* Hide menu */
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: black;
+
+        flex-direction: column;
+
+        transform: translateY(-200%);
+        transition: 0.3s;
+    }
+
+    /* Active state */
+    .nav-links.active {
+        transform: translateY(0);
+    }
+
+    /* Dropdown stack */
+    .dropdown-menu {
+        position: static;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    .dropdown-menu li {
+        background: gray;
+    }
+}

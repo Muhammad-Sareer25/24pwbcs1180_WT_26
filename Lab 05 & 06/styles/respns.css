@@ -1,0 +1,69 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.box {
+  background: #3498db;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* -------- Visibility Utilities -------- */
+.show-mobile { display: block; }
+.hide-mobile { display: none; }
+
+.show-tablet { display: none; }
+.hide-tablet { display: block; }
+
+.show-desktop { display: none; }
+.hide-desktop { display: block; }
+
+/* -------- Spacing Utilities -------- */
+.m-1 { margin: 5px; }
+.m-2 { margin: 10px; }
+.p-1 { padding: 5px; }
+.p-2 { padding: 10px; }
+
+/* -------- Text Alignment Utilities -------- */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* -------- Flex Utilities -------- */
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.flex-column-md { flex-direction: column; }
+.flex-row-lg { flex-direction: row; }
+
+/* -------- Media Queries -------- */
+
+/* Tablet: 768px and up */
+@media (min-width: 768px) {
+  .show-mobile { display: none; }
+  .hide-mobile { display: block; }
+
+  .show-tablet { display: block; }
+  .hide-tablet { display: none; }
+
+  .text-center-md { text-align: center; }
+  .flex-column-md { flex-direction: column; }
+}
+
+/* Desktop: 1024px and up */
+@media (min-width: 1024px) {
+  .show-desktop { display: block; }
+  .hide-desktop { display: none; }
+
+  .text-right-lg { text-align: right; }
+  .flex-row-lg { flex-direction: row; }
+}

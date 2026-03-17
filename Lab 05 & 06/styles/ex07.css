@@ -1,0 +1,46 @@
+/* Common container style */
+.container {
+    display: flex;
+    border: 2px solid black;
+    margin: 20px 0;
+    padding: 10px;
+    height: 150px;
+}
+
+/* Flex items */
+.item {
+    background-color: lightblue;
+    margin: 5px;
+    padding: 20px;
+}
+
+/* 2. flex-direction */
+.column {
+    flex-direction: column;
+}
+
+/* 3. flex-wrap */
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* 4. justify-content */
+.justify {
+    justify-content: space-between;
+}
+
+/* 5. align-items */
+.align {
+    align-items: center;
+}
+
+.tall {
+    height: 80px;
+    background-color: lightcoral;
+}
+
+/* 6. align-content */
+.align-content {
+    flex-wrap: wrap;
+    align-content: space-around;
+}

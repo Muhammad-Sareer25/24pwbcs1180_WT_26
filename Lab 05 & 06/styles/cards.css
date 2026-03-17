@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card */
+.card {
+    background: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column; /* important */
+    justify-content: space-between;
+
+    flex: 1 1 calc(33.33% - 20px); /* 3 cards */
+}
+
+/* Actions at bottom */
+.actions {
+    margin-top: auto;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* -------- Responsive -------- */
+
+/* Tablet (2 columns) */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* Mobile (1 column) */
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}

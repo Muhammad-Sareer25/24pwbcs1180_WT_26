@@ -1,0 +1,79 @@
+/* 1. Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: lightblue;
+    padding: 10px;
+}
+
+.nav-links a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Responsive Navbar */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* 2. Card Layout */
+.card-container {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    flex: 1;
+    background: lightgreen;
+    padding: 15px;
+}
+
+/* 3. Holy Grail Layout */
+.holy-grail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.main {
+    display: flex;
+}
+
+.left, .right {
+    width: 20%;
+    background: lightcoral;
+    padding: 10px;
+}
+
+.content {
+    flex: 1;
+    background: lightyellow;
+    padding: 10px;
+}
+
+header, footer {
+    background: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 4. Form Layout */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.form-row input {
+    flex: 1;
+    margin-left: 10px;
+}

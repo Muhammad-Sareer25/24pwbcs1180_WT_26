@@ -1,0 +1,26 @@
+/* Container styling */
+.container {
+    display: flex;
+    border: 2px solid black;
+    margin: 20px 0;
+    padding: 10px;
+    height: 100px;
+}
+
+/* Flex items styling */
+.item {
+    background-color: rgb(105, 234, 231);
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* flex-shrink container */
+.shrink {
+    width: 300px;
+}
+
+/* align-self container */
+.align-self {
+    align-items: center; /* default alignment */
+}

@@ -1,0 +1,101 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px 0 20px;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    padding-bottom: 10px;
+}
+
+/* Grid Container for Links */
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Glassmorphism Cards for Links */
+a {
+    display: block;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
+}
+
+/* Hover Effects */
+a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+    color: #ffeb3b;
+}
+
+/* Lab Tasks Section - Accent Color */
+h2:nth-of-type(2) {
+    border-color: #ff9800;
+}
+
+h2:nth-of-type(2) + a {
+    color: #ff9800;
+}
+
+h2:nth-of-type(2) + a:hover {
+    color: #ffd54f;
+}
+
+/* Responsive Typography */
+@media (max-width: 1024px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.8rem; }
+    a { padding: 18px; font-size: 1rem; }
+}
+
+@media (max-width: 768px) {
+    body { padding: 20px 10px; }
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.6rem; }
+    section { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 15px; }
+    a { padding: 15px; font-size: 0.95rem; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+    section { grid-template-columns: 1fr; }
+    a { padding: 12px; font-size: 0.9rem; }
+}
+
+/* Optional: Smooth scroll for internal links */
+html { scroll-behavior: smooth; }

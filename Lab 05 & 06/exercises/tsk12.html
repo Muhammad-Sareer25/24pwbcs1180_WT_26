@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Utility Classes</title>
+  <link rel="stylesheet" href="/styles/respns.css">
+</head>
+<body>
+
+<h1>Responsive Utility Classes Demo</h1>
+
+<section>
+  <h2>Visibility Utilities</h2>
+  <p class="show-mobile hide-tablet hide-desktop">Visible on Mobile only</p>
+  <p class="hide-mobile show-tablet hide-desktop">Visible on Tablet only</p>
+  <p class="hide-mobile hide-tablet show-desktop">Visible on Desktop only</p>
+</section>
+
+<section>
+  <h2>Spacing Utilities</h2>
+  <div class="box m-1">Margin 1</div>
+  <div class="box m-2">Margin 2</div>
+  <div class="box p-1">Padding 1</div>
+  <div class="box p-2">Padding 2</div>
+</section>
+
+<section>
+  <h2>Text Alignment</h2>
+  <p class="text-left text-center-md text-right-lg">Text aligns differently on each breakpoint</p>
+</section>
+
+<section>
+  <h2>Flex Utilities</h2>
+  <div class="flex flex-column-md flex-row-lg">
+    <div class="box">Flex Item 1</div>
+    <div class="box">Flex Item 2</div>
+    <div class="box">Flex Item 3</div>
+  </div>
+</section>
+
+</body>
+</html>

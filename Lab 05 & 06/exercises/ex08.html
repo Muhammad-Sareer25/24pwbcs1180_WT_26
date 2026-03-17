@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Item Properties</title>
+    <link rel="stylesheet" href="/styles/ex08.css">
+</head>
+<body>
+
+    <h2>1. flex-grow</h2>
+    <div class="container">
+        <div class="item grow" style="flex-grow: 1;">Item 1</div>
+        <div class="item grow" style="flex-grow: 2;">Item 2</div>
+        <div class="item grow" style="flex-grow: 1;">Item 3</div>
+    </div>
+
+    <h2>2. flex-shrink</h2>
+    <div class="container shrink">
+        <div class="item shrink" style="flex-shrink: 1;">Item 1</div>
+        <div class="item shrink" style="flex-shrink: 2;">Item 2</div>
+        <div class="item shrink" style="flex-shrink: 1;">Item 3</div>
+    </div>
+
+    <h2>3. flex-basis</h2>
+    <div class="container basis">
+        <div class="item" style="flex-basis: 100px;">Item 1</div>
+        <div class="item" style="flex-basis: 200px;">Item 2</div>
+        <div class="item" style="flex-basis: 150px;">Item 3</div>
+    </div>
+
+    <h2>4. flex shorthand</h2>
+    <div class="container">
+        <div class="item" style="flex: 1 1 100px;">Item 1</div>
+        <div class="item" style="flex: 2 1 100px;">Item 2</div>
+        <div class="item" style="flex: 1 1 100px;">Item 3</div>
+    </div>
+
+    <h2>5. align-self</h2>
+    <div class="container align-self">
+        <div class="item">Item 1</div>
+        <div class="item" style="align-self: flex-start;">Item 2</div>
+        <div class="item" style="align-self: flex-end;">Item 3</div>
+    </div>
+
+    <h2>6. order</h2>
+    <div class="container order">
+        <div class="item" style="order: 3;">Item 1</div>
+        <div class="item" style="order: 1;">Item 2</div>
+        <div class="item" style="order: 2;">Item 3</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flexbox Form</title>
+  <link rel="stylesheet" href="/styles/form.css">
+</head>
+<body>
+
+<h1>Flexbox Form Builder</h1>
+
+<form class="form-container">
+
+  <!-- Personal Info -->
+  <div class="form-section">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" placeholder="John">
+
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" placeholder="Doe">
+  </div>
+
+  <!-- Contact Info -->
+  <div class="form-section">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="john@example.com">
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" placeholder="+1234567890">
+  </div>
+
+  <!-- Address -->
+  <div class="form-section">
+    <label for="city">City</label>
+    <input type="text" id="city" placeholder="City">
+
+    <label for="country">Country</label>
+    <select id="country">
+      <option>USA</option>
+      <option>Canada</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <!-- Message -->
+  <div class="form-section full-width">
+    <label for="message">Message</label>
+    <textarea id="message" rows="4" placeholder="Your message..."></textarea>
+  </div>
+
+  <div class="form-section full-width">
+    <button type="submit">Submit</button>
+  </div>
+
+</form>
+
+</body>
+</html>

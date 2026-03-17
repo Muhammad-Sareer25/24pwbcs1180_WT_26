@@ -1,0 +1,64 @@
+/* Base styles (mobile first) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.box {
+    padding: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Mobile default */
+.box1 { background-color: #3498db; }
+.box2 { background-color: #2ecc71; }
+.box3 { background-color: #e67e22; }
+.box4 { background-color: #9b59b6; }
+.box5 { background-color: #e74c3c; }
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+    body { font-size: 16px; }
+    .boxes {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .box {
+        flex: 1 1 45%;
+        font-size: 18px;
+    }
+}
+
+/* Small Desktop (1024px+) */
+@media (min-width: 1024px) {
+    body { font-size: 18px; }
+    .box { flex: 1 1 30%; }
+}
+
+/* Large Desktop (1200px+) */
+@media (min-width: 1200px) {
+    body { font-size: 20px; }
+    .box { flex: 1 1 22%; }
+}
+
+/* Extra Large (1400px+) */
+@media (min-width: 1400px) {
+    body { font-size: 22px; }
+    .box { flex: 1 1 18%; }
+}

@@ -1,0 +1,100 @@
+/* Basic Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    background: #2ecc71;
+    border-radius: 5px;
+}
+
+.breakpoint {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Content Boxes */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.box {
+    background: #e74c3c;
+    color: white;
+    padding: 50px;
+    flex: 1 1 200px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* -------- Media Queries -------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Typography scaling */
+    }
+
+    .nav {
+        flex-direction: column; /* Navigation pattern changes */
+    }
+
+    .box {
+        flex: 1 1 45%; /* Two columns */
+        padding: 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Typography scaling smaller */
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .box {
+        flex: 1 1 100%; /* Single column layout */
+        padding: 30px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px; /* Larger typography */
+    }
+
+    .box {
+        flex: 1 1 22%; /* 4 boxes in a row */
+        padding: 60px;
+    }
+}

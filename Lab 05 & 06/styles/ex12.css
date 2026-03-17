@@ -1,0 +1,82 @@
+/* Base styles (Desktop First) */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    background-color: lightblue;
+    padding: 40px;
+    text-align: center;
+}
+
+.orientation {
+    background-color: lightgreen;
+    padding: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+/* 1. Breakpoints (Responsive Design) */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .box {
+        background-color: orange;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .box {
+        background-color: red;
+    }
+}
+
+/* 2. min-width example */
+@media (min-width: 1000px) {
+    .box {
+        border: 5px solid black;
+    }
+}
+
+/* 3. Orientation */
+@media (orientation: landscape) {
+    .orientation {
+        background-color: yellow;
+    }
+}
+
+@media (orientation: portrait) {
+    .orientation {
+        background-color: purple;
+        color: white;
+    }
+}
+
+/* 4. Media Features */
+
+/* Hover support */
+@media (hover: hover) {
+    .btn:hover {
+        background-color: lightcoral;
+    }
+}
+
+/* Pointer type */
+@media (pointer: coarse) {
+    .btn {
+        font-size: 20px; /* bigger for touch devices */
+    }
+}
+
+/* Aspect ratio */
+@media (aspect-ratio > 1/1) {
+    body {
+        background-color: #f0f0f0;
+    }
+}

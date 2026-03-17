@@ -1,0 +1,50 @@
+/* Common styles */
+.grid {
+    display: grid;
+    border: 2px solid black;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.item {
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 2. grid-template-columns & grid-template-rows */
+.grid-structure {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 50px;
+}
+
+/* 3. grid-template-areas */
+.grid-areas {
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 50px 150px 50px;
+}
+
+.grid-areas .header { grid-area: header; background-color: lightcoral; }
+.grid-areas .sidebar { grid-area: sidebar; background-color: lightgreen; }
+.grid-areas .content { grid-area: content; background-color: lightblue; }
+.grid-areas .footer { grid-area: footer; background-color: lightgoldenrodyellow; }
+
+/* 4. gap */
+.grid-gap {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+}
+
+/* 5. justify-items & align-items */
+.grid-align {
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 100px);
+    justify-items: end; /* horizontal */
+    align-items: end;   /* vertical */
+}
